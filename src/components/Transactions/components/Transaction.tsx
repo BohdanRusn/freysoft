@@ -8,6 +8,7 @@ export interface TransactionProps {
   photo: string;
   amount: number;
   date: Date;
+  id: number;
 }
 
 function Transaction({ storeName, date, amount, photo }: TransactionProps) {

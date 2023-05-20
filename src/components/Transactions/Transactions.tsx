@@ -7,12 +7,14 @@ import pumaStore from "../../assets/images/pumastore.jpg";
 
 const transactions: TransactionProps[] = [
   {
+    id: 1,
     storeName: "Nike Super Store",
     photo: nikeStore,
     amount: 124.85,
     date: new Date(),
   },
   {
+    id: 2,
     storeName: "Puma",
     photo: pumaStore,
     amount: 597.25,
@@ -30,7 +32,7 @@ function Transactions() {
       </Box>
       <Box className={styles.transactionsList}>
         {transactions.map((el) => (
-          <Transaction {...el} />
+          <Transaction key={el.id} {...el} />
         ))}
       </Box>
       <Box />
