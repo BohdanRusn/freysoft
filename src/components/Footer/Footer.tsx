@@ -20,18 +20,14 @@ function Footer() {
           fontSize="large"
           onClick={() => navigate("/")}
           sx={{
-            color: (theme) =>
-              pathname === "/" ? theme.palette.action.active : "inherit",
+            color: (theme) => (pathname === "/" ? theme.palette.action.active : "inherit"),
           }}
         />
         <CreditCardIcon
           fontSize="large"
           onClick={() => navigate("/expenses")}
           sx={{
-            color: (theme) =>
-              pathname === "/expenses"
-                ? theme.palette.action.active
-                : "inherit",
+            color: (theme) => (pathname === "/expenses" ? theme.palette.action.active : "inherit"),
           }}
         />
         <AddCircleOutlinedIcon sx={{ width: 50, height: 50 }} color="action" />
