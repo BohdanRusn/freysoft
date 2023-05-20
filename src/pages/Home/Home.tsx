@@ -1,11 +1,11 @@
 import React from "react";
-import { Typography } from "@mui/material";
 import Transactions from "../../components/Transactions/Transactions";
+import CreditCardComponent from "../../components/CreditCard/CreditCardComponent";
 
 function Home() {
   return (
     <>
-      <Typography>Home</Typography>
+      <CreditCardComponent />
       <Transactions />
     </>
   );

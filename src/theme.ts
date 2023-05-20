@@ -6,6 +6,7 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#FF643B",
+      dark: "#2F3046",
     },
     action: {
       active: "#FF643B",
@@ -13,6 +14,7 @@ const theme = createTheme({
     },
     secondary: {
       main: "#19857b",
+      dark: "#9A63FB",
     },
     error: {
       main: red.A400,
