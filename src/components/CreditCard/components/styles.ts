@@ -5,11 +5,16 @@ export const useStyles = makeStyles((customTheme: typeof theme) => ({
   amountBox: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "end",
+    "& .MuiTypography-root": {
+      fontWeight: 700,
+      fontSize: 30,
+    },
   },
   moneyIcon: {
-    color: "green",
-    fontSize: 26,
+    color: "#2BB272",
+    "&.MuiSvgIcon-root": {
+      fontSize: 30,
+    },
   },
   creditCard: {
     height: 180,
@@ -21,5 +26,21 @@ export const useStyles = makeStyles((customTheme: typeof theme) => ({
     width: "100%",
     top: 20,
     left: 0,
+  },
+  cardHeader: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  cardNumber: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  cardInfo: {
+    display: "flex",
+    height: "80%",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
 }));

@@ -7,7 +7,7 @@ import pumaStore from "../../assets/images/pumastore.jpg";
 
 const transactions: TransactionProps[] = [
   {
-    storeName: "Nike",
+    storeName: "Nike Super Store",
     photo: nikeStore,
     amount: 124.85,
     date: new Date(),

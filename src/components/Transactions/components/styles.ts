@@ -1,4 +1,5 @@
 import { makeStyles } from "@mui/styles";
+import theme from "../../../theme";
 
 export const useStyles = makeStyles({
   body: {
@@ -9,6 +10,12 @@ export const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
     gap: 15,
+  },
+  grayText: {
+    "&.MuiTypography-root": {
+      color: theme.palette.action.disabled,
+      fontSize: 12,
+    },
   },
   transactionInfo: {
     display: "flex",
@@ -21,19 +28,19 @@ export const useStyles = makeStyles({
     justifyContent: "end",
   },
   moneyIcon: {
-    color: "green",
+    color: "#2BB272",
     fontSize: 26,
   },
   moneyAmount: {
     "&.MuiTypography-root": {
-      color: "green",
-      fontSize: 20,
+      color: "#2BB272",
+      fontSize: 18,
       fontWeight: 600,
     },
   },
   store: {
     "&.MuiTypography-root": {
-      fontSize: 23,
+      fontSize: 16,
       fontWeight: 600,
     },
   },

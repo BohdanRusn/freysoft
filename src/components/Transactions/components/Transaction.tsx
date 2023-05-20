@@ -18,7 +18,7 @@ function Transaction({ storeName, date, amount, photo }: TransactionProps) {
       <Box className={styles.transactionInfo}>
         <Box>
           <Typography className={styles.store}>{storeName}</Typography>
-          <Typography>Bank Account</Typography>
+          <Typography className={styles.grayText}>Bank Account</Typography>
         </Box>
         <Box className={styles.amountInfo}>
           <Box className={styles.amountBox}>
@@ -26,7 +26,7 @@ function Transaction({ storeName, date, amount, photo }: TransactionProps) {
             <Typography className={styles.moneyAmount}>{amount}</Typography>
           </Box>
 
-          <Typography>{new Date(date).toDateString()}</Typography>
+          <Typography className={styles.grayText}>{new Date(date).toDateString()}</Typography>
         </Box>
       </Box>
     </Box>
