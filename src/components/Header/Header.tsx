@@ -3,13 +3,13 @@ import React from "react";
 import { Avatar, Badge, Typography } from "@mui/material";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import { useLocation } from "react-router-dom";
-import MyComponent from "./components/StyledBody";
+import StyledHeaderBody from "./components/StyledBody";
 
 function Header() {
   const { pathname } = useLocation();
 
   return (
-    <MyComponent>
+    <StyledHeaderBody>
       <Avatar
         alt="Remy Sharp"
         variant="rounded"
@@ -20,9 +20,9 @@ function Header() {
         {pathname === "/" ? "Home" : "Expenses"}
       </Typography>
       <Badge variant="dot" color="primary">
-        <NotificationsNoneOutlinedIcon fontSize="large" color="action" />
+        <NotificationsNoneOutlinedIcon fontSize="large" />
       </Badge>
-    </MyComponent>
+    </StyledHeaderBody>
   );
 }
 

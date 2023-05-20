@@ -7,6 +7,10 @@ const theme = createTheme({
     primary: {
       main: "#FF643B",
     },
+    action: {
+      active: "#FF643B",
+      disabled: "#C0C0C0",
+    },
     secondary: {
       main: "#19857b",
     },

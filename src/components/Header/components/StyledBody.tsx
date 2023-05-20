@@ -1,6 +1,6 @@
 import { styled } from "@mui/material";
 
-const MyComponent = styled("div")({
+const StyledHeaderBody = styled("header")({
   backgroundColor: "#fff",
   padding: "38px 27px",
   marginBottom: 30,
@@ -9,4 +9,4 @@ const MyComponent = styled("div")({
   justifyContent: "space-between",
 });
 
-export default MyComponent;
+export default StyledHeaderBody;
