@@ -35,8 +35,11 @@
     "react/jsx-uses-react": [
       "off"
     ],
+    "react/no-unused-prop-types": [
+      "off"
+    ],
     "react/jsx-props-no-spreading": [
-      "warn"
+      "off"
     ],
     "react/no-unescaped-entities": [
       "off"

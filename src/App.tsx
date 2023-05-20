@@ -4,6 +4,7 @@ import { Box, Container, Typography } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Container sx={{ padding: "0 27px" }}>
         <Routes>
           <Route path="/expenses" element={<Typography>Expenses</Typography>} />
-          <Route path="/" element={<Typography>main</Typography>} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </Container>
       <Footer />
