@@ -48,7 +48,7 @@ function Expense({ storeName, date, amount, photo, budget }: ExpenseProps) {
         </Box>
         <Box className={styles.sectionBox}>
           <Box />
-          <Typography className={styles.greenText}>75.78%</Typography>
+          <Typography className={styles.greenText}>{Number((+amount * 100) / +budget).toFixed(2)}%</Typography>
         </Box>
       </Box>
     </Box>

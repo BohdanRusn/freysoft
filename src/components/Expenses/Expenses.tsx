@@ -11,7 +11,7 @@ const expenses: ExpenseProps[] = [
     storeName: "Nike Super Store",
     photo: nikeStore,
     amount: "124.85",
-    budget: "1,026",
+    budget: "1026",
     date: new Date(),
   },
   {
@@ -19,7 +19,7 @@ const expenses: ExpenseProps[] = [
     storeName: "Puma",
     photo: pumaStore,
     amount: "597.25",
-    budget: "3,502",
+    budget: "3502",
     date: new Date(),
   },
 ];
