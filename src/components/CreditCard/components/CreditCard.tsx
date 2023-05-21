@@ -22,7 +22,7 @@ function CreditCard() {
       <Box className={styles.cardInfo}>
         <Box className={styles.amountBox}>
           <AttachMoneyIcon className={styles.moneyIcon} />
-          <Typography>76,22.00</Typography>
+          <Typography sx={{ marginLeft: "-8px" }}>76,22.00</Typography>
         </Box>
         <Box className={styles.cardNumber}>
           <Typography>2450 8647 9875 1223</Typography>

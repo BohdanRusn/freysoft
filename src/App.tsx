@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
+import Expenses from "./pages/Expenses/Expenses";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         }}
       >
         <Routes>
-          <Route path="/expenses" element={<Typography>Expenses</Typography>} />
+          <Route path="/expenses" element={<Expenses />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </Container>

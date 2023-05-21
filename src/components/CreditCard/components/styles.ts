@@ -11,7 +11,6 @@ export const useStyles = makeStyles((customTheme: typeof theme) => ({
     },
   },
   moneyIcon: {
-    color: "#2BB272",
     "&.MuiSvgIcon-root": {
       fontSize: 30,
     },
