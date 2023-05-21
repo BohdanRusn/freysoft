@@ -18,6 +18,8 @@ function App() {
       <Container
         sx={{
           padding: "0 27px",
+          overflowY: "auto",
+          height: "78.7vh",
         }}
       >
         <Routes>

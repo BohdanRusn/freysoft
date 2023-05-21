@@ -1,6 +1,7 @@
 import { Box, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent, Typography } from "@mui/material";
 import React from "react";
 import { useStyles } from "./styles";
+import ChartBar from "./components/Chart";
 
 function Analytics() {
   const styles = useStyles();
@@ -43,6 +44,7 @@ function Analytics() {
           </Select>
         </FormControl>
       </Box>
+      <ChartBar />
     </Box>
   );
 }

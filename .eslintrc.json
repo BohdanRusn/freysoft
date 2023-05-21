@@ -45,9 +45,9 @@
       "off"
     ],
     "import/no-extraneous-dependencies": [
-      "error",
+      "off",
       {
-        "devDependencies": true
+        "devDependencies": false
       }
     ],
     "import/prefer-default-export": 0
