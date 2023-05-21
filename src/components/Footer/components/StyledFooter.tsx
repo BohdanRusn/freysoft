@@ -5,6 +5,11 @@ const StyledFooter = styled("footer")({
   left: 0,
   bottom: 0,
   width: "100%",
+  backgroundColor: "#fff",
+  backgroundImage: "none",
+  backgroundRepeat: "repeat",
+  backgroundAttachment: "scroll",
+  backgroundPosition: "0% 0%",
   height: 90,
   "& div": {
     display: "flex",

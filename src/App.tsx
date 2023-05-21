@@ -17,7 +17,7 @@ function App() {
       <Header />
       <Container
         sx={{
-          padding: "0 27px",
+          padding: "0 27px 15px",
           overflowY: "auto",
           height: "78.7vh",
         }}
