@@ -1,12 +1,4 @@
-import {
-  Box,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-  SelectChangeEvent,
-  Typography,
-} from "@mui/material";
+import { Box, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent, Typography } from "@mui/material";
 import React from "react";
 import { useStyles } from "./styles";
 
@@ -27,7 +19,13 @@ function Analytics() {
     <Box>
       <Box className={styles.header}>
         <Typography className={styles.analytics}>Analytics</Typography>
-        <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+        <FormControl
+          sx={{
+            m: 1,
+            minWidth: 120,
+          }}
+          size="small"
+        >
           <InputLabel id="open-select-label">Year</InputLabel>
           <Select
             labelId="open-select-label"

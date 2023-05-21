@@ -15,7 +15,14 @@ function Transaction({ storeName, date, amount, photo }: TransactionProps) {
   const styles = useStyles();
   return (
     <Box className={styles.body}>
-      <Avatar alt={storeName} src={photo} sx={{ width: 40, height: 40 }} />
+      <Avatar
+        alt={storeName}
+        src={photo}
+        sx={{
+          width: 40,
+          height: 40,
+        }}
+      />
       <Box className={styles.transactionInfo}>
         <Box>
           <Typography className={styles.store}>{storeName}</Typography>

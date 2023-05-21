@@ -30,7 +30,13 @@ function Footer() {
             color: (theme) => (pathname === "/expenses" ? theme.palette.action.active : "inherit"),
           }}
         />
-        <AddCircleOutlinedIcon sx={{ width: 50, height: 50 }} color="action" />
+        <AddCircleOutlinedIcon
+          sx={{
+            width: 50,
+            height: 50,
+          }}
+          color="action"
+        />
         <CalendarTodayIcon
           sx={{
             color: (theme) => theme.palette.action.disabled,

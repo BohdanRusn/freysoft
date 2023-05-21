@@ -6,7 +6,12 @@ import CreditCard from "./components/CreditCard";
 function CreditCardComponent() {
   const styles = useStyles();
   return (
-    <Box sx={{ position: "relative", paddingBottom: "80px" }}>
+    <Box
+      sx={{
+        position: "relative",
+        paddingBottom: "80px",
+      }}
+    >
       <Box className={styles.secondaryBox}>
         <CreditCard />
       </Box>

@@ -11,8 +11,23 @@ function Header() {
 
   return (
     <StyledHeaderBody>
-      <Avatar alt="Remy Sharp" variant="rounded" src={avatar} sx={{ width: 50, height: 50 }} />
-      <Typography sx={{ fontWeight: 600, fontSize: 26 }}>{pathname === "/" ? "Home" : "Expenses"}</Typography>
+      <Avatar
+        alt="Remy Sharp"
+        variant="rounded"
+        src={avatar}
+        sx={{
+          width: 50,
+          height: 50,
+        }}
+      />
+      <Typography
+        sx={{
+          fontWeight: 600,
+          fontSize: 26,
+        }}
+      >
+        {pathname === "/" ? "Home" : "Expenses"}
+      </Typography>
       <Badge variant="dot" color="primary">
         <NotificationsNoneOutlinedIcon fontSize="large" />
       </Badge>

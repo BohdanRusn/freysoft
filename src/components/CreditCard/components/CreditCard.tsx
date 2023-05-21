@@ -10,7 +10,13 @@ function CreditCard() {
   return (
     <Box className={styles.creditCard}>
       <Box className={styles.cardHeader}>
-        <Typography sx={{ fontSize: "18px" }}>Total Balance</Typography>
+        <Typography
+          sx={{
+            fontSize: "18px",
+          }}
+        >
+          Total Balance
+        </Typography>
         <MoreHorizIcon />
       </Box>
       <Box className={styles.cardInfo}>
@@ -20,7 +26,13 @@ function CreditCard() {
         </Box>
         <Box className={styles.cardNumber}>
           <Typography>2450 8647 9875 1223</Typography>
-          <img style={{ height: 40 }} alt="Master Card Logo" src={masterCard} />
+          <img
+            style={{
+              height: 40,
+            }}
+            alt="Master Card Logo"
+            src={masterCard}
+          />
         </Box>
       </Box>
     </Box>

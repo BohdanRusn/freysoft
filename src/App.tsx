@@ -8,9 +8,18 @@ import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <Box style={{ height: "100vh", width: "100vw" }}>
+    <Box
+      style={{
+        height: "100vh",
+        width: "100vw",
+      }}
+    >
       <Header />
-      <Container sx={{ padding: "0 27px" }}>
+      <Container
+        sx={{
+          padding: "0 27px",
+        }}
+      >
         <Routes>
           <Route path="/expenses" element={<Typography>Expenses</Typography>} />
           <Route path="/" element={<Home />} />
