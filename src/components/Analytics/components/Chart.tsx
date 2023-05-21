@@ -1,21 +1,23 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
-import "chartjs-plugin-datalabels";
+import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Chart, ChartOptions, registerables } from "chart.js";
+import theme from "../../../theme";
 
-Chart.register(...registerables);
+Chart.register(ChartDataLabels, ...registerables);
 
 function ChartBar() {
   const dataBar = {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
     datasets: [
       {
-        backgroundColor: "#EC932F",
-        borderColor: "rgba(255,99,132,1)",
+        backgroundColor: theme.palette.secondary.dark,
+        borderColor: theme.palette.secondary.dark,
         borderWidth: 1,
-        hoverBackgroundColor: "rgba(255,99,132,0.4)",
-        hoverBorderColor: "rgba(255,99,132,1)",
-        data: [65, 59, 80, 81, 56, 55, 40],
+        borderRadius: 10,
+        hoverBackgroundColor: theme.palette.secondary.dark,
+        hoverBorderColor: theme.palette.secondary.dark,
+        data: [1_234, 2_234, 5_234, 2_234, 1_000, 2_900, 3_900],
       },
     ],
   };
@@ -27,8 +29,11 @@ function ChartBar() {
         display: false,
       },
       datalabels: {
-        display: true,
-        color: "black",
+        anchor: "end",
+        align: "top",
+        formatter: (value) => {
+          return `$ ${value}`;
+        },
       },
       title: {
         display: false,
@@ -44,10 +49,11 @@ function ChartBar() {
         grid: {
           display: false,
         },
+        display: false,
       },
     },
   };
-  return <Bar data={dataBar} options={options as any} width={100} height={50} />;
+  return <Bar data={dataBar} options={options as any} width={100} height={65} />;
 }
 
 export default ChartBar;
